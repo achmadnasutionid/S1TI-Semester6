@@ -1,0 +1,28 @@
+Nama : Achmad Yusuf Nasution
+NIM  : 11S16032
+
+Pada PrimeCounter tanpa konkurensi kita mendapatkan bahwa
+    max dengan 1000L selesai dengan 0 sec
+    max dengan 10000L selesai dengan 0 sec
+    max dengan 100000L selesai dengan 4 sec
+    max dengan 1000000L selesai dengan 341 sec
+
+Pada PrimeCounter dengan konkurensi kita mendapatkan bahwa
+    max dengan 1000L selesai dengan 0 sec
+    max dengan 10000L selesai dengan 0 sec
+    max dengan 100000L selesai dengan 4 sec
+    max dengan 1000000L selesai dengan 326 sec
+
+Mungkin pada rentang 1000L sampai 100000L perbedaan masih belum terlihat jelas.
+Namun, pada rentang 1000000L penyelesaian PrimeCounter dengan konkurensi lebih cepat 15 sec
+dibandingkan dengan penyelesaian PrimeCounter tanpa konkurensi. Dengan menambahkan 3 pengecek lagi
+sekitar 4.3% terjadi peningkatan dalam menyelesaikannya. Hal ini dikarnakan pengecekkan yang dilakukan oleh
+PrimeCounter tanpa konkurensi adalah dengan mengecek satu satu dari rentang yang diberikan dengan hanya satu pengecek.
+Sementara pengecekkan yang dilakukan oleh PrimeCounter dengan konkurensi adalah
+dengan membagi rata rentang yang diberikan bedasarkan banyak dari pengecek sehingga pengecekan akan lebih sedikit.
+
+Kesimpulan terakhir, kasus ini dapat diselesaikan dengan metode Divide and Conquer
+makin banyak pengecek akan makin cepat pengecekkan berlakuka kebalikan yakni
+makin sedikit pengecek akan mengakibatkan lambatnya pengecekkan.
+
+Sekian dari pengamatan.
